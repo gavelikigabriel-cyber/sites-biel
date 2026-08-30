@@ -16,14 +16,15 @@
 
 <body>
 
-    <!-- =========================
+    <!-- ==========================================
          HEADER
-    ========================== -->
+    =========================================== -->
     <header class="header" id="inicio">
         <div class="container header-content">
 
             <a href="#inicio" class="logo">
                 <span class="logo-icon">🍔</span>
+
                 <span>
                     <strong>Parada</strong>
                     <small>do Lanche</small>
@@ -37,7 +38,12 @@
                 <a href="#mais-pedidos">Mais pedidos</a>
             </nav>
 
-            <button class="cart-button" id="openCartButton" aria-label="Abrir carrinho">
+            <button
+                type="button"
+                class="cart-button"
+                id="openCartButton"
+                aria-label="Abrir carrinho"
+            >
                 <span class="cart-icon">🛒</span>
                 <span>Meu pedido</span>
                 <span class="cart-count" id="cartCount">0</span>
@@ -47,18 +53,23 @@
     </header>
 
 
-    <!-- =========================
-         HERO
-    ========================== -->
+    <!-- ==========================================
+         CONTEÚDO PRINCIPAL
+    =========================================== -->
     <main>
 
+        <!-- HERO -->
         <section class="hero">
+
             <div class="hero-overlay"></div>
 
             <div class="container hero-content">
 
                 <div class="hero-text">
-                    <span class="hero-tag">🔥 FEITO NA HORA</span>
+
+                    <span class="hero-tag">
+                        🔥 FEITO NA HORA
+                    </span>
 
                     <h1>
                         Seu lanche favorito
@@ -71,17 +82,26 @@
                     </p>
 
                     <div class="hero-buttons">
-                        <a href="#cardapio" class="btn btn-primary">
+
+                        <a
+                            href="#cardapio"
+                            class="btn btn-primary"
+                        >
                             Ver Cardápio
                             <span>→</span>
                         </a>
 
-                        <a href="#promocoes" class="btn btn-outline">
+                        <a
+                            href="#promocoes"
+                            class="btn btn-outline"
+                        >
                             Ver promoções
                         </a>
+
                     </div>
 
                     <div class="hero-info">
+
                         <div>
                             <span>⚡</span>
                             <strong>Rápido</strong>
@@ -99,48 +119,75 @@
                             <strong>Especial</strong>
                             <small>Feito com carinho</small>
                         </div>
+
                     </div>
+
                 </div>
 
             </div>
+
         </section>
 
 
-        <!-- =========================
+        <!-- ==========================================
              CATEGORIAS
-        ========================== -->
+        =========================================== -->
         <section class="categories-section">
+
             <div class="container">
 
                 <div class="section-heading">
+
                     <div>
-                        <span class="section-label">ESCOLHA O QUE QUER</span>
-                        <h2>Nosso cardápio</h2>
+
+                        <span class="section-label">
+                            ESCOLHA O QUE QUER
+                        </span>
+
+                        <h2>
+                            Nosso cardápio
+                        </h2>
+
                     </div>
 
                     <p>
-                        Tudo preparado na hora para deixar seu pedido ainda mais gostoso.
+                        Tudo preparado na hora para deixar seu pedido
+                        ainda mais gostoso.
                     </p>
+
                 </div>
 
-                <div class="category-list" id="categoryList"></div>
+                <div
+                    class="category-list"
+                    id="categoryList"
+                ></div>
 
             </div>
+
         </section>
 
 
-        <!-- =========================
-             PROMOÇÕES
-        ========================== -->
-        <section class="promo-section" id="promocoes">
+        <!-- ==========================================
+             PROMOÇÃO
+        =========================================== -->
+        <section
+            class="promo-section"
+            id="promocoes"
+        >
+
             <div class="container">
 
                 <div class="promo-banner">
 
                     <div class="promo-content">
-                        <span class="promo-label">🔥 OFERTA ESPECIAL</span>
 
-                        <h2>Combo Parada Especial</h2>
+                        <span class="promo-label">
+                            🔥 OFERTA ESPECIAL
+                        </span>
+
+                        <h2>
+                            Combo Parada Especial
+                        </h2>
 
                         <p>
                             Hambúrguer + batata frita + refrigerante.
@@ -148,177 +195,326 @@
                         </p>
 
                         <div class="promo-price">
-                            <span class="old-price">R$ 34,90</span>
-                            <strong>R$ 29,90</strong>
+
+                            <span class="old-price">
+                                R$ 34,90
+                            </span>
+
+                            <strong>
+                                R$ 29,90
+                            </strong>
+
                         </div>
 
                         <button
+                            type="button"
                             class="btn btn-primary"
                             onclick="openProductModal(11)"
                         >
                             Aproveitar oferta
                         </button>
+
                     </div>
 
                     <div class="promo-image">
+
                         <img
                             src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=85"
                             alt="Hambúrguer artesanal"
+                            loading="lazy"
                         >
+
                     </div>
 
                 </div>
 
             </div>
+
         </section>
 
 
-        <!-- =========================
+        <!-- ==========================================
              CARDÁPIO
-        ========================== -->
-        <section class="menu-section" id="cardapio">
+        =========================================== -->
+        <section
+            class="menu-section"
+            id="cardapio"
+        >
+
             <div class="container">
 
                 <div class="menu-top">
 
                     <div class="section-heading no-margin">
-                        <span class="section-label">ESCOLHA SEU FAVORITO</span>
-                        <h2>Cardápio</h2>
+
+                        <span class="section-label">
+                            ESCOLHA SEU FAVORITO
+                        </span>
+
+                        <h2>
+                            Cardápio
+                        </h2>
+
                     </div>
 
                     <div class="search-box">
+
                         <span>⌕</span>
+
                         <input
                             type="search"
                             id="searchInput"
                             placeholder="Buscar no cardápio..."
                             autocomplete="off"
                         >
+
                     </div>
 
                 </div>
 
-                <div class="category-tabs" id="categoryTabs"></div>
+                <div
+                    class="category-tabs"
+                    id="categoryTabs"
+                ></div>
 
-                <div class="products-grid" id="productsGrid"></div>
+                <div
+                    class="products-grid"
+                    id="productsGrid"
+                ></div>
 
-                <div class="empty-state hidden" id="emptyState">
+                <div
+                    class="empty-state hidden"
+                    id="emptyState"
+                >
+
                     <span>🔎</span>
-                    <h3>Nenhum produto encontrado</h3>
-                    <p>Tente procurar por outro nome ou categoria.</p>
+
+                    <h3>
+                        Nenhum produto encontrado
+                    </h3>
+
+                    <p>
+                        Tente procurar por outro nome ou categoria.
+                    </p>
+
                 </div>
 
             </div>
+
         </section>
 
 
-        <!-- =========================
+        <!-- ==========================================
              MAIS PEDIDOS
-        ========================== -->
-        <section class="popular-section" id="mais-pedidos">
+        =========================================== -->
+        <section
+            class="popular-section"
+            id="mais-pedidos"
+        >
+
             <div class="container">
 
                 <div class="section-heading">
+
                     <div>
-                        <span class="section-label">A GALERA AMA</span>
-                        <h2>Mais pedidos</h2>
+
+                        <span class="section-label">
+                            A GALERA AMA
+                        </span>
+
+                        <h2>
+                            Mais pedidos
+                        </h2>
+
                     </div>
 
-                    <p>Os favoritos dos nossos clientes.</p>
+                    <p>
+                        Os favoritos dos nossos clientes.
+                    </p>
+
                 </div>
 
-                <div class="popular-grid" id="popularGrid"></div>
+                <div
+                    class="popular-grid"
+                    id="popularGrid"
+                ></div>
 
             </div>
+
         </section>
 
 
-        <!-- =========================
+        <!-- ==========================================
              CTA
-        ========================== -->
+        =========================================== -->
         <section class="cta-section">
+
             <div class="container">
 
                 <div class="cta-content">
-                    <span>🍔</span>
+
+                    <span>
+                        🍔
+                    </span>
 
                     <div>
-                        <h2>Bateu aquela fome?</h2>
-                        <p>Faça seu pedido agora e receba no conforto de casa.</p>
+
+                        <h2>
+                            Bateu aquela fome?
+                        </h2>
+
+                        <p>
+                            Faça seu pedido agora e receba
+                            no conforto de casa.
+                        </p>
+
                     </div>
 
-                    <a href="#cardapio" class="btn btn-light">
+                    <a
+                        href="#cardapio"
+                        class="btn btn-light"
+                    >
                         Pedir agora →
                     </a>
+
                 </div>
 
             </div>
+
         </section>
 
     </main>
 
 
-    <!-- =========================
+    <!-- ==========================================
          FOOTER
-    ========================== -->
+    =========================================== -->
     <footer class="footer">
+
         <div class="container footer-grid">
 
             <div class="footer-brand">
-                <a href="#inicio" class="logo">
-                    <span class="logo-icon">🍔</span>
+
+                <a
+                    href="#inicio"
+                    class="logo"
+                >
+
+                    <span class="logo-icon">
+                        🍔
+                    </span>
+
                     <span>
                         <strong>Parada</strong>
                         <small>do Lanche</small>
                     </span>
+
                 </a>
 
                 <p>
                     Seu ponto oficial para matar a fome.
                     Lanches deliciosos preparados com carinho.
                 </p>
+
             </div>
 
-            <div>
-                <h3>Cardápio</h3>
-                <a href="#cardapio">Hambúrgueres</a>
-                <a href="#cardapio">X-Saladas</a>
-                <a href="#cardapio">Cachorros-quentes</a>
-                <a href="#cardapio">Porções</a>
-            </div>
 
             <div>
-                <h3>Atendimento</h3>
-                <p>🕐 Terça a domingo</p>
-                <p>18:00 às 23:30</p>
-                <p>📍 Sua cidade</p>
+
+                <h3>
+                    Cardápio
+                </h3>
+
+                <a href="#cardapio">
+                    Hambúrgueres
+                </a>
+
+                <a href="#cardapio">
+                    X-Saladas
+                </a>
+
+                <a href="#cardapio">
+                    Cachorros-quentes
+                </a>
+
+                <a href="#cardapio">
+                    Porções
+                </a>
+
             </div>
 
+
             <div>
-                <h3>Contato</h3>
-                <a href="#" id="footerWhatsapp">💬 WhatsApp</a>
-                <p>📱 Faça seu pedido online</p>
+
+                <h3>
+                    Atendimento
+                </h3>
+
+                <p>
+                    🕐 Terça a domingo
+                </p>
+
+                <p>
+                    18:00 às 23:30
+                </p>
+
+                <p>
+                    📍 Sua cidade
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contato
+                </h3>
+
+                <a
+                    href="#"
+                    id="footerWhatsapp"
+                >
+                    💬 WhatsApp
+                </a>
+
+                <p>
+                    📱 Faça seu pedido online
+                </p>
+
             </div>
 
         </div>
+
 
         <div class="footer-bottom">
+
             <div class="container">
-                © <span id="currentYear"></span> Parada do Lanche.
+
+                ©
+                <span id="currentYear"></span>
+                Parada do Lanche.
                 Todos os direitos reservados.
+
             </div>
+
         </div>
+
     </footer>
 
 
-    <!-- =========================
+    <!-- ==========================================
          MODAL DO PRODUTO
-    ========================== -->
-    <div class="modal-overlay hidden" id="productModal">
+    =========================================== -->
+    <div
+        class="modal-overlay hidden"
+        id="productModal"
+    >
 
         <div class="product-modal">
 
             <button
+                type="button"
                 class="modal-close"
                 onclick="closeProductModal()"
                 aria-label="Fechar"
@@ -326,68 +522,172 @@
                 ×
             </button>
 
+
             <div class="modal-product-image">
-                <img id="modalProductImage" src="" alt="">
+
+                <img
+                    id="modalProductImage"
+                    src=""
+                    alt=""
+                >
+
             </div>
+
 
             <div class="modal-product-content">
 
-                <span class="modal-category" id="modalProductCategory"></span>
+                <span
+                    class="modal-category"
+                    id="modalProductCategory"
+                ></span>
 
-                <h2 id="modalProductName"></h2>
+                <h2
+                    id="modalProductName"
+                ></h2>
 
-                <p id="modalProductDescription"></p>
+                <p
+                    id="modalProductDescription"
+                ></p>
 
-                <div class="modal-price" id="modalProductPrice"></div>
+                <div
+                    class="modal-price"
+                    id="modalProductPrice"
+                ></div>
 
+
+                <!-- PERSONALIZAÇÃO -->
                 <div class="customization">
 
-                    <h3>Personalize seu lanche</h3>
+                    <h3>
+                        Personalize seu lanche
+                    </h3>
+
 
                     <label class="option-checkbox">
-                        <input type="checkbox" value="Queijo extra" data-price="3">
-                        <span>Queijo extra</span>
-                        <strong>+ R$ 3,00</strong>
+
+                        <input
+                            type="checkbox"
+                            value="Queijo extra"
+                            data-price="3"
+                        >
+
+                        <span>
+                            Queijo extra
+                        </span>
+
+                        <strong>
+                            + R$ 3,00
+                        </strong>
+
                     </label>
 
-                    <label class="option-checkbox">
-                        <input type="checkbox" value="Bacon extra" data-price="4">
-                        <span>Bacon extra</span>
-                        <strong>+ R$ 4,00</strong>
-                    </label>
 
                     <label class="option-checkbox">
-                        <input type="checkbox" value="Molho especial" data-price="2">
-                        <span>Molho especial</span>
-                        <strong>+ R$ 2,00</strong>
+
+                        <input
+                            type="checkbox"
+                            value="Bacon extra"
+                            data-price="4"
+                        >
+
+                        <span>
+                            Bacon extra
+                        </span>
+
+                        <strong>
+                            + R$ 4,00
+                        </strong>
+
                     </label>
 
+
                     <label class="option-checkbox">
-                        <input type="checkbox" value="Sem cebola" data-price="0">
-                        <span>Sem cebola</span>
-                        <strong>Grátis</strong>
+
+                        <input
+                            type="checkbox"
+                            value="Molho especial"
+                            data-price="2"
+                        >
+
+                        <span>
+                            Molho especial
+                        </span>
+
+                        <strong>
+                            + R$ 2,00
+                        </strong>
+
+                    </label>
+
+
+                    <label class="option-checkbox">
+
+                        <input
+                            type="checkbox"
+                            value="Sem cebola"
+                            data-price="0"
+                        >
+
+                        <span>
+                            Sem cebola
+                        </span>
+
+                        <strong>
+                            Grátis
+                        </strong>
+
                     </label>
 
                 </div>
 
+
+                <!-- QUANTIDADE -->
                 <div class="quantity-control large">
 
-                    <span>Quantidade</span>
+                    <span>
+                        Quantidade
+                    </span>
 
                     <div>
-                        <button onclick="changeModalQuantity(-1)">−</button>
-                        <strong id="modalQuantity">1</strong>
-                        <button onclick="changeModalQuantity(1)">+</button>
+
+                        <button
+                            type="button"
+                            onclick="changeModalQuantity(-1)"
+                        >
+                            −
+                        </button>
+
+                        <strong id="modalQuantity">
+                            1
+                        </strong>
+
+                        <button
+                            type="button"
+                            onclick="changeModalQuantity(1)"
+                        >
+                            +
+                        </button>
+
                     </div>
 
                 </div>
 
+
                 <div class="modal-total">
-                    <span>Total</span>
-                    <strong id="modalTotal"></strong>
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="modalTotal">
+                        R$ 0,00
+                    </strong>
+
                 </div>
 
+
                 <button
+                    type="button"
                     class="btn btn-primary full-width"
                     id="addModalProductButton"
                 >
@@ -401,21 +701,32 @@
     </div>
 
 
-    <!-- =========================
+    <!-- ==========================================
          CARRINHO
-    ========================== -->
-    <div class="cart-overlay hidden" id="cartOverlay">
+    =========================================== -->
+    <div
+        class="cart-overlay hidden"
+        id="cartOverlay"
+    >
 
         <aside class="cart-sidebar">
 
             <div class="cart-header">
 
                 <div>
-                    <span class="section-label">SEU PEDIDO</span>
-                    <h2>Meu carrinho</h2>
+
+                    <span class="section-label">
+                        SEU PEDIDO
+                    </span>
+
+                    <h2>
+                        Meu carrinho
+                    </h2>
+
                 </div>
 
                 <button
+                    type="button"
                     class="modal-close"
                     onclick="closeCart()"
                     aria-label="Fechar carrinho"
@@ -425,41 +736,91 @@
 
             </div>
 
-            <div class="cart-items" id="cartItems"></div>
 
-            <div class="cart-empty hidden" id="cartEmpty">
-                <span>🛒</span>
-                <h3>Seu carrinho está vazio</h3>
-                <p>Adicione alguns lanches deliciosos!</p>
+            <div
+                class="cart-items"
+                id="cartItems"
+            ></div>
+
+
+            <div
+                class="cart-empty hidden"
+                id="cartEmpty"
+            >
+
+                <span>
+                    🛒
+                </span>
+
+                <h3>
+                    Seu carrinho está vazio
+                </h3>
+
+                <p>
+                    Adicione alguns lanches deliciosos!
+                </p>
 
                 <button
+                    type="button"
                     class="btn btn-primary"
                     onclick="closeCart(); scrollToMenu();"
                 >
                     Ver cardápio
                 </button>
+
             </div>
 
-            <div class="cart-footer" id="cartFooter">
+
+            <div
+                class="cart-footer"
+                id="cartFooter"
+            >
 
                 <div class="cart-summary">
-                    <div>
-                        <span>Subtotal</span>
-                        <strong id="cartSubtotal">R$ 0,00</strong>
-                    </div>
 
                     <div>
-                        <span>Taxa de entrega</span>
-                        <strong id="cartDelivery">R$ 5,00</strong>
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <strong id="cartSubtotal">
+                            R$ 0,00
+                        </strong>
+
                     </div>
+
+
+                    <div>
+
+                        <span>
+                            Taxa de entrega
+                        </span>
+
+                        <strong id="cartDelivery">
+                            R$ 5,00
+                        </strong>
+
+                    </div>
+
 
                     <div class="cart-total">
-                        <span>Total</span>
-                        <strong id="cartTotal">R$ 5,00</strong>
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong id="cartTotal">
+                            R$ 5,00
+                        </strong>
+
                     </div>
+
                 </div>
 
+
                 <button
+                    type="button"
                     class="btn btn-primary full-width"
                     onclick="openCheckout()"
                 >
@@ -477,22 +838,37 @@
     </div>
 
 
-    <!-- =========================
+    <!-- ==========================================
          CHECKOUT
-    ========================== -->
-    <div class="modal-overlay hidden" id="checkoutModal">
+    =========================================== -->
+    <div
+        class="modal-overlay hidden"
+        id="checkoutModal"
+    >
 
         <div class="checkout-modal">
 
             <div class="checkout-header">
 
                 <div>
-                    <span class="section-label">ÚLTIMA ETAPA</span>
-                    <h2>Finalizar pedido</h2>
-                    <p>Preencha seus dados para receber o pedido.</p>
+
+                    <span class="section-label">
+                        ÚLTIMA ETAPA
+                    </span>
+
+                    <h2>
+                        Finalizar pedido
+                    </h2>
+
+                    <p>
+                        Preencha seus dados para receber o pedido.
+                    </p>
+
                 </div>
 
+
                 <button
+                    type="button"
                     class="modal-close"
                     onclick="closeCheckout()"
                     aria-label="Fechar"
@@ -502,57 +878,98 @@
 
             </div>
 
-            <form id="checkoutForm">
 
+            <!-- IMPORTANTE:
+                 O formulário possui um único submit.
+                 O JavaScript intercepta o evento e abre o WhatsApp.
+            -->
+            <form
+                id="checkoutForm"
+                novalidate
+            >
+
+                <!-- DADOS -->
                 <div class="form-section">
-                    <h3>👤 Seus dados</h3>
+
+                    <h3>
+                        👤 Seus dados
+                    </h3>
 
                     <div class="form-grid">
 
                         <div class="form-group">
-                            <label for="customerName">Nome *</label>
+
+                            <label for="customerName">
+                                Nome *
+                            </label>
+
                             <input
                                 id="customerName"
                                 name="customerName"
                                 type="text"
                                 placeholder="Seu nome"
+                                autocomplete="name"
                                 required
                             >
+
                         </div>
 
+
                         <div class="form-group">
-                            <label for="customerPhone">Telefone *</label>
+
+                            <label for="customerPhone">
+                                Telefone *
+                            </label>
+
                             <input
                                 id="customerPhone"
                                 name="customerPhone"
                                 type="tel"
                                 placeholder="(41) 99999-9999"
+                                autocomplete="tel"
                                 required
                             >
+
                         </div>
 
                     </div>
+
                 </div>
 
 
+                <!-- ENDEREÇO -->
                 <div class="form-section">
-                    <h3>📍 Endereço de entrega</h3>
+
+                    <h3>
+                        📍 Endereço de entrega
+                    </h3>
 
                     <div class="form-grid">
 
                         <div class="form-group form-wide">
-                            <label for="address">Endereço *</label>
+
+                            <label for="address">
+                                Endereço *
+                            </label>
+
                             <input
                                 id="address"
                                 name="address"
                                 type="text"
                                 placeholder="Rua, avenida..."
+                                autocomplete="street-address"
                                 required
                             >
+
                         </div>
 
+
                         <div class="form-group">
-                            <label for="number">Número *</label>
+
+                            <label for="number">
+                                Número *
+                            </label>
+
                             <input
                                 id="number"
                                 name="number"
@@ -560,92 +977,162 @@
                                 placeholder="123"
                                 required
                             >
+
                         </div>
 
+
                         <div class="form-group">
-                            <label for="neighborhood">Bairro *</label>
+
+                            <label for="neighborhood">
+                                Bairro *
+                            </label>
+
                             <input
                                 id="neighborhood"
                                 name="neighborhood"
                                 type="text"
                                 placeholder="Seu bairro"
+                                autocomplete="address-level3"
                                 required
                             >
+
                         </div>
 
+
                         <div class="form-group form-wide">
-                            <label for="reference">Ponto de referência</label>
+
+                            <label for="reference">
+                                Ponto de referência
+                            </label>
+
                             <input
                                 id="reference"
                                 name="reference"
                                 type="text"
                                 placeholder="Ex.: próximo ao mercado"
                             >
+
                         </div>
 
                     </div>
+
                 </div>
 
 
+                <!-- PAGAMENTO -->
                 <div class="form-section">
-                    <h3>💳 Forma de pagamento</h3>
+
+                    <h3>
+                        💳 Forma de pagamento
+                    </h3>
+
 
                     <div class="payment-options">
 
                         <label class="payment-option">
+
                             <input
                                 type="radio"
                                 name="payment"
                                 value="Dinheiro"
                                 required
                             >
-                            <span>💵</span>
-                            <strong>Dinheiro</strong>
+
+                            <span>
+                                💵
+                            </span>
+
+                            <strong>
+                                Dinheiro
+                            </strong>
+
                         </label>
 
+
                         <label class="payment-option">
+
                             <input
                                 type="radio"
                                 name="payment"
                                 value="Pix"
                             >
-                            <span>⚡</span>
-                            <strong>Pix</strong>
+
+                            <span>
+                                ⚡
+                            </span>
+
+                            <strong>
+                                Pix
+                            </strong>
+
                         </label>
 
+
                         <label class="payment-option">
+
                             <input
                                 type="radio"
                                 name="payment"
                                 value="Cartão de crédito"
                             >
-                            <span>💳</span>
-                            <strong>Crédito</strong>
+
+                            <span>
+                                💳
+                            </span>
+
+                            <strong>
+                                Crédito
+                            </strong>
+
                         </label>
 
+
                         <label class="payment-option">
+
                             <input
                                 type="radio"
                                 name="payment"
                                 value="Cartão de débito"
                             >
-                            <span>💳</span>
-                            <strong>Débito</strong>
+
+                            <span>
+                                💳
+                            </span>
+
+                            <strong>
+                                Débito
+                            </strong>
+
                         </label>
 
                     </div>
 
-                    <div class="change-box hidden" id="changeBox">
+
+                    <!-- TROCO -->
+                    <div
+                        class="change-box hidden"
+                        id="changeBox"
+                    >
 
                         <label class="switch-label">
-                            <input type="checkbox" id="needChange">
-                            <span>Precisa de troco?</span>
+
+                            <input
+                                type="checkbox"
+                                id="needChange"
+                            >
+
+                            <span>
+                                Precisa de troco?
+                            </span>
+
                         </label>
+
 
                         <div
                             class="form-group hidden"
                             id="changeValueGroup"
                         >
+
                             <label for="changeValue">
                                 Troco para quanto?
                             </label>
@@ -657,6 +1144,7 @@
                                 step="0.01"
                                 placeholder="Ex.: 50,00"
                             >
+
                         </div>
 
                     </div>
@@ -664,32 +1152,56 @@
                 </div>
 
 
+                <!-- OBSERVAÇÃO -->
                 <div class="form-section">
-                    <h3>📝 Observação</h3>
+
+                    <h3>
+                        📝 Observação
+                    </h3>
 
                     <div class="form-group">
+
                         <textarea
                             id="orderNote"
                             name="orderNote"
                             rows="3"
                             placeholder="Alguma observação sobre seu pedido?"
                         ></textarea>
+
                     </div>
+
                 </div>
 
 
+                <!-- TOTAL -->
                 <div class="checkout-total">
-                    <span>Total do pedido</span>
-                    <strong id="checkoutTotal">R$ 0,00</strong>
+
+                    <span>
+                        Total do pedido
+                    </span>
+
+                    <strong id="checkoutTotal">
+                        R$ 0,00
+                    </strong>
+
                 </div>
 
+
+                <!-- ÚNICO BOTÃO SUBMIT -->
                 <button
                     type="submit"
                     class="btn btn-whatsapp full-width"
+                    id="submitOrderButton"
                 >
-                    <span>💬</span>
+
+                    <span>
+                        💬
+                    </span>
+
                     Enviar pedido pelo WhatsApp
+
                 </button>
+
 
                 <p class="secure-note">
                     Seu pedido será aberto no WhatsApp para confirmação.
@@ -702,35 +1214,53 @@
     </div>
 
 
-    <!-- =========================
+    <!-- ==========================================
          TOAST
-    ========================== -->
-    <div class="toast" id="toast">
-        <span>✓</span>
+    =========================================== -->
+    <div
+        class="toast"
+        id="toast"
+    >
+
+        <span>
+            ✓
+        </span>
+
         <div>
-            <strong>Adicionado!</strong>
-            <small id="toastMessage">Produto adicionado ao carrinho.</small>
+
+            <strong>
+                Adicionado!
+            </strong>
+
+            <small id="toastMessage">
+                Produto adicionado ao carrinho.
+            </small>
+
         </div>
+
     </div>
 
 
-    <!-- =========================
-         BOTÃO WHATSAPP
-    ========================== -->
+    <!-- ==========================================
+         WHATSAPP FLUTUANTE
+    =========================================== -->
     <a
         href="#"
         class="floating-whatsapp"
         id="floatingWhatsapp"
         aria-label="Falar no WhatsApp"
     >
-        <span>💬</span>
+        <span>
+            💬
+        </span>
     </a>
 
 
-    <!-- =========================
+    <!-- ==========================================
          VOLTAR AO TOPO
-    ========================== -->
+    =========================================== -->
     <button
+        type="button"
         class="back-to-top"
         id="backToTop"
         aria-label="Voltar ao topo"
@@ -739,6 +1269,7 @@
     </button>
 
 
+    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
