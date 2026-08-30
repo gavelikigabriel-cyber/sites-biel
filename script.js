@@ -19,9 +19,9 @@ const CONFIG = {
      * Brasil + DDD + número
      *
      * Exemplo:
-     * 41999999999
+     * 4198713-3381
      */
-    whatsapp: "5541999999999",
+    whatsapp: "554198713-3381",
 
     /*
      * Valor da entrega.
